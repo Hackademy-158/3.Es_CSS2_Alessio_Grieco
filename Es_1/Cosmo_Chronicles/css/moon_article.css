@@ -1,0 +1,185 @@
+/* Corpo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 24);
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    height: 100vh; /* Aggiunge altezza al corpo per permettere il centering verticale */
+}
+
+/* Contenitore principale per le card */
+.card-container {
+    display: flex;
+    flex-direction: row; /* Dispone le card in colonna */
+    justify-content: flex-start, space-around; /* Allinea le card in alto */
+    align-items: center;
+    width: 100%;
+    gap: 20px; /* Distanza tra le card */
+    padding: 20px;
+}
+
+/* Contenitore orizzontale per la prima card e l'immagine */
+.card-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Adatta la larghezza del contenitore */
+    gap: 20px;
+}
+
+
+.article-1 {
+    display: flex;
+    flex-direction: column; /* Dispone gli elementi della card in colonna */
+    align-items: start; /* Centra gli elementi della card */
+    border: 20px solid #b8b8b8;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #b8b8b8;
+    border-radius: 8px;
+}
+
+/* Prima card (centrata nella sezione 1/3) */
+.card1 {
+    display: flex;
+    flex-direction: column; /* Dispone gli elementi della card in colonna */
+    align-items: center; /* Centra gli elementi della card */
+    background-color: rgb(240, 240, 240);
+    border: 1px solid #b8b8b8;
+    border-radius: 8px;
+    width: 30%; /* La prima card occupa 1/3 della larghezza */
+    padding: 1em;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.295);
+    overflow: hidden;
+    color: rgb(43, 43, 43);
+    text-decoration: none;
+}
+
+/* Immagine Card (larghezza occupata 2/3) */
+.card2 {
+    display: flex;
+    justify-content: center; /* Centra l'immagine orizzontalmente */
+    align-items: center;
+    max-width: 20%; /* L'immagine può occupare al massimo la larghezza del contenitore */
+    height: auto;
+    padding: 20px 20px;
+    margin: 0;
+    border-radius: 30%; /* Forma circolare per l'immagine */
+    border: solid 20px azure;
+    width: 30%; /* L'immagine occupa 2/3 della larghezza */
+}
+
+/* Stile per i titoli */
+h4,
+h2,
+h3 {
+    margin: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: larger;
+}
+
+/* Eccezzione esclusiva per h2*/
+h2 {
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+/* Stile per l'itinerario */
+.itinerary li {
+    list-style-type: none;
+    margin: 10px 0;
+    color: rgb(173, 173, 173);
+}
+
+/* Card dell'itinerario sotto le prime due card */
+.card3 {
+    display: flex;
+    flex-direction: column; /* Dispone gli elementi in colonna */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid #b8b8b8;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.295);
+    width: 80%; /* La card dell'itinerario è più piccola rispetto alle altre */
+    align-self: center; /* Centra la card dell'itinerario */
+}
+
+/* Stile per il titolo dell'itinerario */
+.itinerary-card h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(43, 43, 43);
+    text-align: center;
+}
+
+/* Lista dell'itinerario */
+.itinerary {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Dispone gli elementi della lista in colonna */
+    gap: 10px; /* Distanza tra gli elementi della lista */
+}
+
+/* Stile degli elementi elencati nell'itinerario */
+.itinerary li {
+    color: rgb(43, 43, 43);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Stile dei paragrafi */
+p {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 20px;
+}
+
+
+.article-1 {
+    display: flex;
+    flex-direction: row; /* Dispone le card in orizzontale */
+    justify-content: space-between; /* Distanza tra le card */
+    align-items: flex-start; /* Allinea le card in alto */
+    border: 1px solid #b8b8b8;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Prima card (centrata nella sezione 1/3) */
+.card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid #b8b8b8;
+    border-radius: 8px;
+    width: 30%; /* La prima card occupa 1/3 della larghezza */
+    padding: 1em;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.295);
+    overflow: hidden;
+    color: rgb(43, 43, 43);
+    text-decoration: none;
+}
+
+/* Immagine Card (larghezza occupata 2/3) */
+.card2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 20%;
+    height: auto;
+    padding: 20px 20px;
+    margin: 0;
+    border-radius: 30%;
+    border: solid 20px azure;
+    width: 60%; /* La card 2 occupa il 60% della larghezza */
+}
